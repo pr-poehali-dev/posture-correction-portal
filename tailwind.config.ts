@@ -19,8 +19,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				cormorant: ['Cormorant', 'serif'],
-				sans: ['Open Sans', 'sans-serif'],
+				ardeco: ['Ardeco', 'serif'],
+				forum: ['Forum', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

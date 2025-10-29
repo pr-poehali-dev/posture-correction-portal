@@ -102,7 +102,7 @@ export default function Index() {
     <div className="min-h-screen bg-background">
       <header className="border-b border-border" style={{ backgroundColor: '#303C30' }}>
         <div className="container mx-auto px-4 py-6">
-          <h1 className="font-cormorant text-3xl font-semibold tracking-tight text-white">
+          <h1 className="font-ardeco text-3xl font-semibold tracking-tight text-white">
             Упражнения для осанки
           </h1>
         </div>
@@ -112,7 +112,7 @@ export default function Index() {
         <section className="py-16 md:py-24" style={{ backgroundColor: '#FDFAF0' }}>
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12 animate-fade-in">
-              <h2 className="font-cormorant text-5xl md:text-6xl font-light mb-6 leading-tight" style={{ color: '#303C30' }}>
+              <h2 className="font-ardeco text-5xl md:text-6xl font-light mb-6 leading-tight" style={{ color: '#303C30' }}>
                 Здоровая спина — основа вашего благополучия
               </h2>
               <p className="text-lg leading-relaxed" style={{ color: '#303C30' }}>
@@ -127,7 +127,7 @@ export default function Index() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-8">
-                <h2 className="font-cormorant text-3xl md:text-4xl font-light mb-3 text-accent-foreground">
+                <h2 className="font-ardeco text-3xl md:text-4xl font-light mb-3 text-accent-foreground">
                   Необходимый инвентарь
                 </h2>
                 <p className="text-accent-foreground/80">
@@ -174,7 +174,7 @@ export default function Index() {
                   </div>
                   <div className="p-6 md:p-8" style={{ backgroundColor: '#FDFAF0' }}>
                     <div className="flex items-start justify-between mb-4 gap-4">
-                      <h3 className="font-cormorant text-3xl font-medium" style={{ color: '#303C30' }}>
+                      <h3 className="font-ardeco text-3xl font-medium" style={{ color: '#303C30' }}>
                         {exercise.title}
                       </h3>
                       <div className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap shadow-sm">
@@ -194,7 +194,7 @@ export default function Index() {
         <section className="py-16 md:py-24" style={{ backgroundColor: '#FDFAF0' }}>
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto">
-              <h2 className="font-cormorant text-4xl md:text-5xl font-light mb-12 text-center" style={{ color: '#303C30' }}>
+              <h2 className="font-ardeco text-4xl md:text-5xl font-light mb-12 text-center" style={{ color: '#303C30' }}>
                 Часто задаваемые вопросы
               </h2>
               <Accordion type="single" collapsible className="space-y-4">
@@ -205,7 +205,7 @@ export default function Index() {
                     className="border border-border rounded-lg px-6"
                     style={{ backgroundColor: 'white' }}
                   >
-                    <AccordionTrigger className="text-left font-cormorant text-xl py-6 hover:no-underline" style={{ color: '#303C30' }}>
+                    <AccordionTrigger className="text-left font-ardeco text-xl py-6 hover:no-underline" style={{ color: '#303C30' }}>
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="pb-6 leading-relaxed" style={{ color: '#303C30' }}>
@@ -221,7 +221,7 @@ export default function Index() {
         <section className="py-16 md:py-24 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="font-cormorant text-4xl md:text-5xl font-light mb-6">
+              <h2 className="font-ardeco text-4xl md:text-5xl font-light mb-6">
                 Готовы к более глубокой трансформации?
               </h2>
               <p className="text-lg mb-8 opacity-90 leading-relaxed">
