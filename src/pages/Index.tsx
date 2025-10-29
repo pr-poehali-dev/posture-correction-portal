@@ -109,7 +109,7 @@ export default function Index() {
       </header>
 
       <main>
-        <section className="py-16 md:py-24">
+        <section className="py-16 md:py-24 bg-gradient-to-b from-background to-secondary/20">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12 animate-fade-in">
               <h2 className="font-cormorant text-5xl md:text-6xl font-light mb-6 leading-tight">
@@ -123,7 +123,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="py-12 border-y border-border">
+        <section className="py-12 bg-gradient-to-b from-secondary/20 via-accent/10 to-secondary/20 backdrop-blur-sm">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-8">
@@ -154,7 +154,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="py-12 bg-secondary/30">
+        <section className="py-12 bg-gradient-to-b from-secondary/20 to-background">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto space-y-8">
               {exercises.map((exercise, index) => (
@@ -191,7 +191,7 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="py-16 md:py-24">
+        <section className="py-16 md:py-24 bg-gradient-to-b from-background via-muted/20 to-background">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto">
               <h2 className="font-cormorant text-4xl md:text-5xl font-light mb-12 text-center">
@@ -217,7 +217,9 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+        <section className="py-16 md:py-24 bg-gradient-to-br from-primary via-accent to-primary text-primary-foreground relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(120,124,92,0.1),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(78,55,54,0.1),transparent_50%)]" />
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="font-cormorant text-4xl md:text-5xl font-light mb-6">
