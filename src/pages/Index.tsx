@@ -99,8 +99,8 @@ export default function Index() {
   const [selectedExercise, setSelectedExercise] = useState<number | null>(null);
 
   return (
-    <div className="min-h-screen bg-background">
-      <header className="border-b border-border">
+    <div className="min-h-screen bg-gradient-to-br from-secondary/40 via-background to-muted/30">
+      <header className="border-b border-border bg-primary/5 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-6">
           <h1 className="font-cormorant text-3xl font-semibold tracking-tight">
             Упражнения для осанки
@@ -109,13 +109,15 @@ export default function Index() {
       </header>
 
       <main>
-        <section className="py-16 md:py-24 bg-gradient-to-b from-background to-secondary/20">
-          <div className="container mx-auto px-4">
+        <section className="py-16 md:py-24 bg-gradient-to-br from-secondary/30 via-accent/20 to-muted/30 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(120,124,92,0.15),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(78,55,54,0.15),transparent_50%)]" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl mx-auto text-center mb-12 animate-fade-in">
               <h2 className="font-cormorant text-5xl md:text-6xl font-light mb-6 leading-tight">
                 Здоровая спина — основа вашего благополучия
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-foreground/80 leading-relaxed">
                 Простые и эффективные упражнения для профилактики сколиоза
                 и улучшения осанки в домашних условиях
               </p>
@@ -123,14 +125,15 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="py-12 bg-gradient-to-b from-secondary/20 via-accent/10 to-secondary/20 backdrop-blur-sm">
-          <div className="container mx-auto px-4">
+        <section className="py-12 bg-gradient-to-b from-accent/15 via-secondary/25 to-accent/15 relative">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(120,124,92,0.1),transparent_70%)]" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-8">
                 <h2 className="font-cormorant text-3xl md:text-4xl font-light mb-3">
                   Необходимый инвентарь
                 </h2>
-                <p className="text-muted-foreground">
+                <p className="text-foreground/70">
                   Для комфортного выполнения всех упражнений вам понадобится:
                 </p>
               </div>
@@ -138,12 +141,12 @@ export default function Index() {
                 {allEquipment.map((item, index) => (
                   <Card 
                     key={index}
-                    className="p-4 text-center hover:shadow-md transition-all border-border/50 animate-scale-in"
+                    className="p-4 text-center hover:shadow-lg transition-all border-border/50 animate-scale-in bg-gradient-to-br from-card to-secondary/20"
                     style={{ animationDelay: `${index * 50}ms` }}
                   >
                     <div className="flex flex-col items-center gap-3">
-                      <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
-                        <Icon name={item.icon} size={24} className="text-foreground" />
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center">
+                        <Icon name={item.icon} size={24} className="text-primary-foreground" />
                       </div>
                       <p className="text-sm font-medium leading-tight">{item.name}</p>
                     </div>
@@ -154,16 +157,17 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="py-12 bg-gradient-to-b from-secondary/20 to-background">
-          <div className="container mx-auto px-4">
+        <section className="py-12 bg-gradient-to-b from-muted/30 via-secondary/20 to-accent/10 relative">
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(120,124,92,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(120,124,92,0.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-5xl mx-auto space-y-8">
               {exercises.map((exercise, index) => (
                 <Card 
                   key={exercise.id}
-                  className="overflow-hidden transition-all hover:shadow-lg animate-scale-in border-border/50"
+                  className="overflow-hidden transition-all hover:shadow-xl animate-scale-in border-border/50 bg-gradient-to-br from-card to-secondary/30"
                   style={{ animationDelay: `${index * 50}ms` }}
                 >
-                  <div className="relative aspect-video overflow-hidden bg-black">
+                  <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-primary to-accent">
                     <iframe
                       src={exercise.videoUrl}
                       title={exercise.title}
@@ -172,16 +176,16 @@ export default function Index() {
                       allowFullScreen
                     />
                   </div>
-                  <div className="p-6 md:p-8">
+                  <div className="p-6 md:p-8 bg-gradient-to-br from-secondary/20 to-accent/10">
                     <div className="flex items-start justify-between mb-4 gap-4">
                       <h3 className="font-cormorant text-3xl font-medium">
                         {exercise.title}
                       </h3>
-                      <div className="bg-secondary px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap">
+                      <div className="bg-gradient-to-br from-secondary to-accent text-primary-foreground px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap shadow-sm">
                         {exercise.duration}
                       </div>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-foreground/80 leading-relaxed">
                       {exercise.description}
                     </p>
                   </div>
@@ -191,8 +195,9 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="py-16 md:py-24 bg-gradient-to-b from-background via-muted/20 to-background">
-          <div className="container mx-auto px-4">
+        <section className="py-16 md:py-24 bg-gradient-to-br from-accent/10 via-muted/25 to-secondary/20 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(78,55,54,0.1),transparent_50%)]" />
+          <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-2xl mx-auto">
               <h2 className="font-cormorant text-4xl md:text-5xl font-light mb-12 text-center">
                 Часто задаваемые вопросы
