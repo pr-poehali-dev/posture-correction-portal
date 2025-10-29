@@ -100,22 +100,22 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-background">
-      <header className="border-b border-border bg-secondary">
+      <header className="border-b border-border" style={{ backgroundColor: '#303C30' }}>
         <div className="container mx-auto px-4 py-6">
-          <h1 className="font-cormorant text-3xl font-semibold tracking-tight">
+          <h1 className="font-cormorant text-3xl font-semibold tracking-tight text-white">
             Упражнения для осанки
           </h1>
         </div>
       </header>
 
       <main>
-        <section className="py-16 md:py-24 bg-muted">
+        <section className="py-16 md:py-24" style={{ backgroundColor: '#FDFAF0' }}>
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12 animate-fade-in">
-              <h2 className="font-cormorant text-5xl md:text-6xl font-light mb-6 leading-tight">
+              <h2 className="font-cormorant text-5xl md:text-6xl font-light mb-6 leading-tight" style={{ color: '#303C30' }}>
                 Здоровая спина — основа вашего благополучия
               </h2>
-              <p className="text-lg text-foreground leading-relaxed">
+              <p className="text-lg leading-relaxed" style={{ color: '#303C30' }}>
                 Простые и эффективные упражнения для профилактики сколиоза
                 и улучшения осанки в домашних условиях
               </p>
@@ -154,16 +154,16 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="py-12 bg-secondary">
+        <section className="py-12" style={{ backgroundColor: '#303C30' }}>
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto space-y-8">
               {exercises.map((exercise, index) => (
                 <Card 
                   key={exercise.id}
-                  className="overflow-hidden transition-all hover:shadow-xl animate-scale-in border-border/50 bg-card"
-                  style={{ animationDelay: `${index * 50}ms` }}
+                  className="overflow-hidden transition-all hover:shadow-xl animate-scale-in border-border/50"
+                  style={{ animationDelay: `${index * 50}ms`, backgroundColor: '#FDFAF0' }}
                 >
-                  <div className="relative aspect-video overflow-hidden bg-primary">
+                  <div className="relative aspect-video overflow-hidden" style={{ backgroundColor: '#303C30' }}>
                     <iframe
                       src={exercise.videoUrl}
                       title={exercise.title}
@@ -172,16 +172,16 @@ export default function Index() {
                       allowFullScreen
                     />
                   </div>
-                  <div className="p-6 md:p-8 bg-muted">
+                  <div className="p-6 md:p-8" style={{ backgroundColor: '#FDFAF0' }}>
                     <div className="flex items-start justify-between mb-4 gap-4">
-                      <h3 className="font-cormorant text-3xl font-medium">
+                      <h3 className="font-cormorant text-3xl font-medium" style={{ color: '#303C30' }}>
                         {exercise.title}
                       </h3>
                       <div className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap shadow-sm">
                         {exercise.duration}
                       </div>
                     </div>
-                    <p className="text-foreground leading-relaxed">
+                    <p className="leading-relaxed" style={{ color: '#303C30' }}>
                       {exercise.description}
                     </p>
                   </div>
@@ -191,10 +191,10 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="py-16 md:py-24 bg-background">
+        <section className="py-16 md:py-24" style={{ backgroundColor: '#FDFAF0' }}>
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto">
-              <h2 className="font-cormorant text-4xl md:text-5xl font-light mb-12 text-center">
+              <h2 className="font-cormorant text-4xl md:text-5xl font-light mb-12 text-center" style={{ color: '#303C30' }}>
                 Часто задаваемые вопросы
               </h2>
               <Accordion type="single" collapsible className="space-y-4">
@@ -202,12 +202,13 @@ export default function Index() {
                   <AccordionItem 
                     key={index} 
                     value={`item-${index}`}
-                    className="border border-border rounded-lg px-6 bg-card"
+                    className="border border-border rounded-lg px-6"
+                    style={{ backgroundColor: 'white' }}
                   >
-                    <AccordionTrigger className="text-left font-cormorant text-xl py-6 hover:no-underline">
+                    <AccordionTrigger className="text-left font-cormorant text-xl py-6 hover:no-underline" style={{ color: '#303C30' }}>
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground pb-6 leading-relaxed">
+                    <AccordionContent className="pb-6 leading-relaxed" style={{ color: '#303C30' }}>
                       {faq.answer}
                     </AccordionContent>
                   </AccordionItem>
