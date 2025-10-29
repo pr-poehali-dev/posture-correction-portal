@@ -112,9 +112,7 @@ export default function Index() {
         <section className="py-16 md:py-24" style={{ backgroundColor: '#FDFAF0' }}>
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center mb-12 animate-fade-in">
-              <h2 className="font-ardeco text-5xl md:text-6xl font-light mb-6 leading-tight" style={{ color: '#303C30' }}>
-                Здоровая спина — основа вашего благополучия
-              </h2>
+              <h2 className="font-ardeco text-5xl md:text-6xl font-light mb-6 leading-tight" style={{ color: '#303C30' }}>Здоровая спина — основа твоего благополучия</h2>
               <p className="text-lg leading-relaxed" style={{ color: '#303C30' }}>Проверенные упражнения, которые помогут тебе правильно и качественно работать над улучшением осанки и твоего самочувствия. Приведенные ниже упражнения подтверждены специалистами массажистами и тренерами по ЛФК.  </p>
             </div>
           </div>
