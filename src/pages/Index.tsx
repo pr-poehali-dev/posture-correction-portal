@@ -142,8 +142,8 @@ export default function Index() {
                     style={{ animationDelay: `${index * 50}ms` }}
                   >
                     <div className="flex flex-col items-center gap-3">
-                      <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
-                        <Icon name={item.icon} size={24} className="text-secondary-foreground" />
+                      <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#303C30' }}>
+                        <Icon name={item.icon} size={24} className="text-white" />
                       </div>
                       <p className="text-sm font-medium leading-tight">{item.name}</p>
                     </div>
