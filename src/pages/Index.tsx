@@ -87,6 +87,14 @@ const faqs = [
   }
 ];
 
+const allEquipment = [
+  { name: 'Коврик для йоги', icon: 'LayoutGrid' },
+  { name: 'Гантели 1-2 кг', icon: 'Dumbbell' },
+  { name: 'Эластичная лента', icon: 'Link' },
+  { name: 'Валик или полотенце', icon: 'Cylinder' },
+  { name: 'Фитбол (опционально)', icon: 'Circle' },
+];
+
 export default function Index() {
   const [selectedExercise, setSelectedExercise] = useState<number | null>(null);
 
@@ -111,6 +119,37 @@ export default function Index() {
                 Простые и эффективные упражнения для профилактики сколиоза
                 и улучшения осанки в домашних условиях
               </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-12 border-y border-border">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-8">
+                <h2 className="font-cormorant text-3xl md:text-4xl font-light mb-3">
+                  Необходимый инвентарь
+                </h2>
+                <p className="text-muted-foreground">
+                  Для комфортного выполнения всех упражнений вам понадобится:
+                </p>
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                {allEquipment.map((item, index) => (
+                  <Card 
+                    key={index}
+                    className="p-4 text-center hover:shadow-md transition-all border-border/50 animate-scale-in"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    <div className="flex flex-col items-center gap-3">
+                      <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
+                        <Icon name={item.icon} size={24} className="text-foreground" />
+                      </div>
+                      <p className="text-sm font-medium leading-tight">{item.name}</p>
+                    </div>
+                  </Card>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -142,20 +181,9 @@ export default function Index() {
                         {exercise.duration}
                       </div>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed mb-6">
+                    <p className="text-muted-foreground leading-relaxed">
                       {exercise.description}
                     </p>
-                    <div className="border-t border-border pt-4">
-                      <div className="flex items-start gap-2">
-                        <Icon name="Package" size={20} className="mt-0.5 text-muted-foreground flex-shrink-0" />
-                        <div>
-                          <p className="font-medium mb-1 text-sm">Необходимый инвентарь:</p>
-                          <p className="text-sm text-muted-foreground">
-                            {exercise.equipment.join(', ')}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </Card>
               ))}
