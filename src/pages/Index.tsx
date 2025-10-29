@@ -115,10 +115,7 @@ export default function Index() {
               <h2 className="font-ardeco text-5xl md:text-6xl font-light mb-6 leading-tight" style={{ color: '#303C30' }}>
                 Здоровая спина — основа вашего благополучия
               </h2>
-              <p className="text-lg leading-relaxed" style={{ color: '#303C30' }}>
-                Простые и эффективные упражнения для профилактики сколиоза
-                и улучшения осанки в домашних условиях
-              </p>
+              <p className="text-lg leading-relaxed" style={{ color: '#303C30' }}>Проверенные упражнения, которые помогут тебе правильно и качественно работать над улучшением осанки и твоего самочувствия. Приведенные ниже упражнения подтверждены специалистами массажистами и тренерами по ЛФК.  </p>
             </div>
           </div>
         </section>
