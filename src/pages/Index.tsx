@@ -33,6 +33,38 @@ const exercises = [
     image: 'https://cdn.poehali.dev/projects/4922fce0-4ba3-4e5f-9244-9fdf899713e4/files/2ef96cd7-111e-4614-bf29-afcea360d770.jpg',
     description: 'Базовые упражнения для восстановления правильного положения позвоночника и формирования здоровой осанки.',
     videoUrl: '#'
+  },
+  {
+    id: 4,
+    title: 'Расслабление шейного отдела',
+    duration: '4 минуты',
+    image: 'https://cdn.poehali.dev/projects/4922fce0-4ba3-4e5f-9244-9fdf899713e4/files/37e05453-2b18-4e40-af00-189c6a89dba9.jpg',
+    description: 'Мягкая растяжка для шеи и плеч. Устраняет зажимы и головные боли напряжения при сидячей работе.',
+    videoUrl: '#'
+  },
+  {
+    id: 5,
+    title: 'Упражнения для лопаток',
+    duration: '6 минут',
+    image: 'https://cdn.poehali.dev/projects/4922fce0-4ba3-4e5f-9244-9fdf899713e4/files/c1a279d7-a60e-4132-ac6d-99acebc3f260.jpg',
+    description: 'Укрепление межлопаточной зоны для правильной осанки. Помогает избавиться от сутулости и округлых плеч.',
+    videoUrl: '#'
+  },
+  {
+    id: 6,
+    title: 'Растяжка поясницы',
+    duration: '5 минут',
+    image: 'https://cdn.poehali.dev/projects/4922fce0-4ba3-4e5f-9244-9fdf899713e4/files/c42476ab-8a81-4c8d-98d5-94218841c730.jpg',
+    description: 'Снятие напряжения в нижней части спины. Профилактика болей и улучшение гибкости поясничного отдела.',
+    videoUrl: '#'
+  },
+  {
+    id: 7,
+    title: 'Укрепление кора',
+    duration: '8 минут',
+    image: 'https://cdn.poehali.dev/projects/4922fce0-4ba3-4e5f-9244-9fdf899713e4/files/f84241a9-4c4f-4ea8-8681-3cfa083883a2.jpg',
+    description: 'Комплекс для укрепления мышц центра тела. Стабилизирует позвоночник и улучшает общую физическую форму.',
+    videoUrl: '#'
   }
 ];
 
