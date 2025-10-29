@@ -14,57 +14,57 @@ const exercises = [
     id: 1,
     title: 'Растяжка грудного отдела',
     duration: '5 минут',
-    image: 'https://cdn.poehali.dev/projects/4922fce0-4ba3-4e5f-9244-9fdf899713e4/files/fbec2b26-4e10-4c81-a9c4-41a6fe3728c2.jpg',
+    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Упражнение для раскрытия грудной клетки и улучшения осанки. Помогает снять напряжение после длительной работы за компьютером.',
-    videoUrl: '#'
+    equipment: ['Коврик для йоги']
   },
   {
     id: 2,
     title: 'Укрепление мышц спины',
     duration: '7 минут',
-    image: 'https://cdn.poehali.dev/projects/4922fce0-4ba3-4e5f-9244-9fdf899713e4/files/032abecf-3f0e-4a7d-8d91-9d6a66ac643f.jpg',
+    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Комплекс для укрепления мышечного корсета спины. Эффективная профилактика сколиоза и болей в пояснице.',
-    videoUrl: '#'
+    equipment: ['Гантели 1-2 кг', 'Коврик для йоги']
   },
   {
     id: 3,
     title: 'Коррекция осанки',
     duration: '10 минут',
-    image: 'https://cdn.poehali.dev/projects/4922fce0-4ba3-4e5f-9244-9fdf899713e4/files/2ef96cd7-111e-4614-bf29-afcea360d770.jpg',
+    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Базовые упражнения для восстановления правильного положения позвоночника и формирования здоровой осанки.',
-    videoUrl: '#'
+    equipment: ['Коврик для йоги', 'Стена']
   },
   {
     id: 4,
     title: 'Расслабление шейного отдела',
     duration: '4 минуты',
-    image: 'https://cdn.poehali.dev/projects/4922fce0-4ba3-4e5f-9244-9fdf899713e4/files/37e05453-2b18-4e40-af00-189c6a89dba9.jpg',
+    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Мягкая растяжка для шеи и плеч. Устраняет зажимы и головные боли напряжения при сидячей работе.',
-    videoUrl: '#'
+    equipment: ['Не требуется']
   },
   {
     id: 5,
     title: 'Упражнения для лопаток',
     duration: '6 минут',
-    image: 'https://cdn.poehali.dev/projects/4922fce0-4ba3-4e5f-9244-9fdf899713e4/files/c1a279d7-a60e-4132-ac6d-99acebc3f260.jpg',
+    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Укрепление межлопаточной зоны для правильной осанки. Помогает избавиться от сутулости и округлых плеч.',
-    videoUrl: '#'
+    equipment: ['Эластичная лента', 'Коврик для йоги']
   },
   {
     id: 6,
     title: 'Растяжка поясницы',
     duration: '5 минут',
-    image: 'https://cdn.poehali.dev/projects/4922fce0-4ba3-4e5f-9244-9fdf899713e4/files/c42476ab-8a81-4c8d-98d5-94218841c730.jpg',
+    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Снятие напряжения в нижней части спины. Профилактика болей и улучшение гибкости поясничного отдела.',
-    videoUrl: '#'
+    equipment: ['Коврик для йоги', 'Валик или полотенце']
   },
   {
     id: 7,
     title: 'Укрепление кора',
     duration: '8 минут',
-    image: 'https://cdn.poehali.dev/projects/4922fce0-4ba3-4e5f-9244-9fdf899713e4/files/f84241a9-4c4f-4ea8-8681-3cfa083883a2.jpg',
+    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Комплекс для укрепления мышц центра тела. Стабилизирует позвоночник и улучшает общую физическую форму.',
-    videoUrl: '#'
+    equipment: ['Коврик для йоги', 'Фитбол (опционально)']
   }
 ];
 
@@ -117,45 +117,45 @@ export default function Index() {
 
         <section className="py-12 bg-secondary/30">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="max-w-5xl mx-auto space-y-8">
               {exercises.map((exercise, index) => (
                 <Card 
                   key={exercise.id}
-                  className="overflow-hidden group cursor-pointer transition-all hover:shadow-lg animate-scale-in border-border/50"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                  onClick={() => setSelectedExercise(exercise.id)}
+                  className="overflow-hidden transition-all hover:shadow-lg animate-scale-in border-border/50"
+                  style={{ animationDelay: `${index * 50}ms` }}
                 >
-                  <div className="relative aspect-[4/5] overflow-hidden">
-                    <img 
-                      src={exercise.image} 
-                      alt={exercise.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  <div className="relative aspect-video overflow-hidden bg-black">
+                    <iframe
+                      src={exercise.videoUrl}
+                      title={exercise.title}
+                      className="w-full h-full"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
-                    <div className="absolute top-4 right-4">
-                      <div className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-medium">
+                  </div>
+                  <div className="p-6 md:p-8">
+                    <div className="flex items-start justify-between mb-4 gap-4">
+                      <h3 className="font-cormorant text-3xl font-medium">
+                        {exercise.title}
+                      </h3>
+                      <div className="bg-secondary px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap">
                         {exercise.duration}
                       </div>
                     </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="font-cormorant text-2xl font-medium mb-3">
-                      {exercise.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                    <p className="text-muted-foreground leading-relaxed mb-6">
                       {exercise.description}
                     </p>
-                    <Button 
-                      variant="ghost" 
-                      className="w-full justify-between group/btn"
-                    >
-                      <span>Подробнее</span>
-                      <Icon 
-                        name="ArrowRight" 
-                        className="transition-transform group-hover/btn:translate-x-1"
-                        size={18}
-                      />
-                    </Button>
+                    <div className="border-t border-border pt-4">
+                      <div className="flex items-start gap-2">
+                        <Icon name="Package" size={20} className="mt-0.5 text-muted-foreground flex-shrink-0" />
+                        <div>
+                          <p className="font-medium mb-1 text-sm">Необходимый инвентарь:</p>
+                          <p className="text-sm text-muted-foreground">
+                            {exercise.equipment.join(', ')}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </Card>
               ))}
