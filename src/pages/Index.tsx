@@ -175,13 +175,10 @@ export default function Index() {
                     />
                   </div>
                   <div className="p-6 md:p-8" style={{ backgroundColor: '#FDFAF0' }}>
-                    <div className="flex items-start justify-between mb-4 gap-4">
+                    <div className="mb-4">
                       <h3 className="font-ardeco text-3xl font-medium" style={{ color: '#303C30' }}>
                         {exercise.title}
                       </h3>
-                      <div className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap shadow-sm">
-                        {exercise.duration}
-                      </div>
                     </div>
                     <div className="flex items-center gap-2 mb-3">
                       <Icon name="Repeat" size={18} style={{ color: '#303C30' }} />
