@@ -97,6 +97,7 @@ const faqs = [
 const allEquipment = [
   { name: 'Коврик для йоги', icon: 'LayoutGrid' },
   { name: 'Валик или полотенце', icon: 'Cylinder' },
+  { name: 'Маленький мешочек', icon: 'Package' },
 ];
 
 export default function Index() {
