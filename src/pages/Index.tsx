@@ -14,6 +14,7 @@ const exercises = [
     id: 1,
     title: 'Мягкие наклоны в стороны',
     duration: '5 минут',
+    reps: '10 повторений на каждую сторону',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Техника выполнения: Исходное положение - встать прямо, ноги на ширине плеч, одна рука на поясе, вторая поднята вверх, наклоните половину туловища',
     equipment: ['Коврик для йоги']
@@ -22,6 +23,7 @@ const exercises = [
     id: 2,
     title: 'Укрепление мышц спины',
     duration: '7 минут',
+    reps: '3 подхода по 12 повторений',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Комплекс для укрепления мышечного корсета спины. Эффективная профилактика сколиоза и болей в пояснице.',
     equipment: ['Коврик для йоги']
@@ -30,6 +32,7 @@ const exercises = [
     id: 3,
     title: 'Коррекция осанки',
     duration: '10 минут',
+    reps: '15 повторений',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Базовые упражнения для восстановления правильного положения позвоночника и формирования здоровой осанки.',
     equipment: ['Коврик для йоги', 'Стена']
@@ -38,6 +41,7 @@ const exercises = [
     id: 4,
     title: 'Расслабление шейного отдела',
     duration: '4 минуты',
+    reps: '8 повторений в каждую сторону',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Мягкая растяжка для шеи и плеч. Устраняет зажимы и головные боли напряжения при сидячей работе.',
     equipment: ['Не требуется']
@@ -46,6 +50,7 @@ const exercises = [
     id: 5,
     title: 'Упражнения для лопаток',
     duration: '6 минут',
+    reps: '3 подхода по 10 повторений',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Укрепление межлопаточной зоны для правильной осанки. Помогает избавиться от сутулости и округлых плеч.',
     equipment: ['Коврик для йоги']
@@ -54,6 +59,7 @@ const exercises = [
     id: 6,
     title: 'Растяжка поясницы',
     duration: '5 минут',
+    reps: '5 повторений с задержкой 30 секунд',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Снятие напряжения в нижней части спины. Профилактика болей и улучшение гибкости поясничного отдела.',
     equipment: ['Коврик для йоги', 'Валик или полотенце']
@@ -62,6 +68,7 @@ const exercises = [
     id: 7,
     title: 'Укрепление кора',
     duration: '8 минут',
+    reps: '3 подхода по 15 повторений',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Комплекс для укрепления мышц центра тела. Стабилизирует позвоночник и улучшает общую физическую форму.',
     equipment: ['Коврик для йоги']
@@ -174,6 +181,10 @@ export default function Index() {
                       <div className="bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap shadow-sm">
                         {exercise.duration}
                       </div>
+                    </div>
+                    <div className="flex items-center gap-2 mb-3">
+                      <Icon name="Repeat" size={18} style={{ color: '#303C30' }} />
+                      <span className="text-sm font-medium" style={{ color: '#303C30' }}>{exercise.reps}</span>
                     </div>
                     <p className="leading-relaxed" style={{ color: '#303C30' }}>
                       {exercise.description}
