@@ -24,7 +24,7 @@ const exercises = [
     duration: '7 минут',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Комплекс для укрепления мышечного корсета спины. Эффективная профилактика сколиоза и болей в пояснице.',
-    equipment: ['Гантели 1-2 кг', 'Коврик для йоги']
+    equipment: ['Коврик для йоги']
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ const exercises = [
     duration: '6 минут',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Укрепление межлопаточной зоны для правильной осанки. Помогает избавиться от сутулости и округлых плеч.',
-    equipment: ['Эластичная лента', 'Коврик для йоги']
+    equipment: ['Коврик для йоги']
   },
   {
     id: 6,
@@ -64,7 +64,7 @@ const exercises = [
     duration: '8 минут',
     videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
     description: 'Комплекс для укрепления мышц центра тела. Стабилизирует позвоночник и улучшает общую физическую форму.',
-    equipment: ['Коврик для йоги', 'Фитбол (опционально)']
+    equipment: ['Коврик для йоги']
   }
 ];
 
@@ -89,10 +89,7 @@ const faqs = [
 
 const allEquipment = [
   { name: 'Коврик для йоги', icon: 'LayoutGrid' },
-  { name: 'Гантели 1-2 кг', icon: 'Dumbbell' },
-  { name: 'Эластичная лента', icon: 'Link' },
   { name: 'Валик или полотенце', icon: 'Cylinder' },
-  { name: 'Фитбол (опционально)', icon: 'Circle' },
 ];
 
 export default function Index() {
