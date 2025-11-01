@@ -96,8 +96,8 @@ const faqs = [
 
 const allEquipment = [
   { name: 'Коврик для йоги', icon: 'LayoutGrid', image: 'https://cdn.poehali.dev/files/0d2aed2d-78ff-4d12-a3f5-eaee225e6bf5.png' },
-  { name: 'Валик или полотенце', icon: 'Cylinder' },
-  { name: 'Маленький мешочек', icon: 'Package' },
+  { name: 'Валик или полотенце', icon: 'Cylinder', image: 'https://cdn.poehali.dev/projects/4922fce0-4ba3-4e5f-9244-9fdf899713e4/files/0721d633-e0af-4df9-a005-18953cefbbf3.jpg' },
+  { name: 'Маленький мешочек', icon: 'Package', image: 'https://cdn.poehali.dev/projects/4922fce0-4ba3-4e5f-9244-9fdf899713e4/files/16e95349-72c5-4a2a-9e4a-89582b4d470f.jpg' },
 ];
 
 export default function Index() {
