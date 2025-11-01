@@ -95,7 +95,7 @@ const faqs = [
 ];
 
 const allEquipment = [
-  { name: 'Коврик для йоги', icon: 'LayoutGrid' },
+  { name: 'Коврик для йоги', icon: 'LayoutGrid', image: 'https://cdn.poehali.dev/files/0d2aed2d-78ff-4d12-a3f5-eaee225e6bf5.png' },
   { name: 'Валик или полотенце', icon: 'Cylinder' },
   { name: 'Маленький мешочек', icon: 'Package' },
 ];
@@ -144,7 +144,11 @@ export default function Index() {
                     >
                       <div className="flex flex-col items-center gap-3">
                         <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ backgroundColor: '#303C30' }}>
-                          <Icon name={item.icon} size={24} className="text-white" />
+                          {item.image ? (
+                            <img src={item.image} alt={item.name} className="w-8 h-8 object-contain" />
+                          ) : (
+                            <Icon name={item.icon} size={24} className="text-white" />
+                          )}
                         </div>
                         <p className="text-sm font-medium leading-tight">{item.name}</p>
                       </div>
