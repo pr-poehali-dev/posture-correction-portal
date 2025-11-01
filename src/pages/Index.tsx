@@ -135,7 +135,7 @@ export default function Index() {
                 </p>
               </div>
               <div className="flex justify-center">
-                <div className="grid grid-cols-2 gap-4 max-w-md">
+                <div className="flex flex-wrap gap-4 justify-center">
                   {allEquipment.map((item, index) => (
                     <Card 
                       key={index}
