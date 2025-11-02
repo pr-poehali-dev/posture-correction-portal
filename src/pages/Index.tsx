@@ -184,7 +184,7 @@ export default function Index() {
                       <Icon name="Repeat" size={18} style={{ color: '#303C30' }} />
                       <span className="text-sm font-medium" style={{ color: '#303C30' }}>{exercise.reps}</span>
                     </div>
-                    <p className="leading-relaxed" style={{ color: '#303C30' }}>
+                    <p className="leading-relaxed whitespace-pre-line" style={{ color: '#303C30' }}>
                       {exercise.description}
                     </p>
                   </div>
