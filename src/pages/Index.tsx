@@ -233,23 +233,23 @@ export default function Index() {
               </p>
               <div className="flex flex-col gap-6 items-center mb-8">
                 <a 
-                  href="tel:+79123456789" 
+                  href="tel:+79888923260" 
                   className="flex items-center gap-3 text-lg hover:opacity-80 transition-opacity"
                   style={{ color: '#FDFAF0' }}
                 >
                   <Icon name="Phone" size={24} />
-                  <span>+7 (912) 345-67-89</span>
+                  <span>+7 (988) 892-32-60</span>
                 </a>
                 <a 
-                  href="mailto:info@example.com" 
+                  href="mailto:pak1508@inbox.ru" 
                   className="flex items-center gap-3 text-lg hover:opacity-80 transition-opacity"
                   style={{ color: '#FDFAF0' }}
                 >
                   <Icon name="Mail" size={24} />
-                  <span>info@example.com</span>
+                  <span>pak1508@inbox.ru</span>
                 </a>
                 <a 
-                  href="https://t.me/username" 
+                  href="https://t.me/+OdexWasMPSU5ZGVi" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-lg hover:opacity-80 transition-opacity"
