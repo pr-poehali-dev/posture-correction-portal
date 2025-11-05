@@ -241,6 +241,16 @@ export default function Index() {
                   <span>+7 (988) 892-32-60</span>
                 </a>
                 <a 
+                  href="https://wa.me/79888923260" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-lg hover:opacity-80 transition-opacity"
+                  style={{ color: '#FDFAF0' }}
+                >
+                  <Icon name="MessageCircle" size={24} />
+                  <span>WhatsApp</span>
+                </a>
+                <a 
                   href="mailto:pak1508@inbox.ru" 
                   className="flex items-center gap-3 text-lg hover:opacity-80 transition-opacity"
                   style={{ color: '#FDFAF0' }}
