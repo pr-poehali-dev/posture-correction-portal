@@ -60,7 +60,7 @@ const exercises = [
     title: 'Упражнение "кошечка"',
     duration: '5 минут',
     reps: '3 подхода по 10 повторений. Задержка 3 секунды',
-    videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+    videoUrl: 'https://www.youtube.com/embed/E5o7CypWPUM',
     description: 'Техника выполнения: Встаньте на четвереньки, прогните поясницу, затем скрутите грудной отдел. На прогибе делаем глубокий вдох, на скручивании плавный выдох',
     equipment: ['Коврик для йоги', 'Валик или полотенце']
   },
