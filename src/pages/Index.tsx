@@ -221,33 +221,52 @@ export default function Index() {
           </div>
         </section>
 
-        <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+        <section className="py-16 md:py-24" style={{ backgroundColor: '#303C30' }}>
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="font-ardeco text-4xl md:text-5xl font-light mb-6">
-                Готовы к более глубокой трансформации?
+              <h2 className="font-ardeco text-4xl md:text-5xl font-light mb-6" style={{ color: '#FDFAF0' }}>
+                Запишитесь на диагностику
               </h2>
-              <p className="text-lg mb-8 opacity-90 leading-relaxed">
-                Получите персональную программу от профессионального инструктора
-                с индивидуальным подходом и детальной поддержкой
+              <p className="text-lg mb-8 leading-relaxed" style={{ color: '#FDFAF0', opacity: 0.9 }}>
+                Получите персональную консультацию и индивидуальную программу упражнений, 
+                разработанную специально для вас
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button 
-                  size="lg" 
-                  variant="secondary"
-                  className="font-medium px-8"
+              <div className="flex flex-col gap-6 items-center mb-8">
+                <a 
+                  href="tel:+79123456789" 
+                  className="flex items-center gap-3 text-lg hover:opacity-80 transition-opacity"
+                  style={{ color: '#FDFAF0' }}
                 >
-                  Узнать подробнее
-                  <Icon name="ArrowRight" className="ml-2" size={18} />
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="font-medium px-8 bg-transparent border-primary-foreground/20 hover:bg-primary-foreground/10"
+                  <Icon name="Phone" size={24} />
+                  <span>+7 (912) 345-67-89</span>
+                </a>
+                <a 
+                  href="mailto:info@example.com" 
+                  className="flex items-center gap-3 text-lg hover:opacity-80 transition-opacity"
+                  style={{ color: '#FDFAF0' }}
                 >
-                  Связаться с нами
-                </Button>
+                  <Icon name="Mail" size={24} />
+                  <span>info@example.com</span>
+                </a>
+                <a 
+                  href="https://t.me/username" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-lg hover:opacity-80 transition-opacity"
+                  style={{ color: '#FDFAF0' }}
+                >
+                  <Icon name="Send" size={24} />
+                  <span>Telegram</span>
+                </a>
               </div>
+              <Button 
+                size="lg" 
+                className="font-medium px-8"
+                style={{ backgroundColor: '#FDFAF0', color: '#303C30' }}
+              >
+                Записаться на консультацию
+                <Icon name="ArrowRight" className="ml-2" size={18} />
+              </Button>
             </div>
           </div>
         </section>
