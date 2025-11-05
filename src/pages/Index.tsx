@@ -269,14 +269,16 @@ export default function Index() {
                   <span>Telegram</span>
                 </a>
               </div>
-              <Button 
-                size="lg" 
-                className="font-medium px-8"
-                style={{ backgroundColor: '#FDFAF0', color: '#303C30' }}
-              >
-                Записаться на консультацию
-                <Icon name="ArrowRight" className="ml-2" size={18} />
-              </Button>
+              <a href="https://wa.me/79888923260?text=Здравствуйте!%20Хочу%20записаться%20на%20диагностику" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg" 
+                  className="font-medium px-8"
+                  style={{ backgroundColor: '#FDFAF0', color: '#303C30' }}
+                >
+                  Записаться на консультацию
+                  <Icon name="ArrowRight" className="ml-2" size={18} />
+                </Button>
+              </a>
             </div>
           </div>
         </section>
